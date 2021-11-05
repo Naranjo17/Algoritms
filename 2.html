@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        let numerosList = []; 
+        let contadorPositivos = 0;
+        let contadorNegativos = 0;
+        let contadorCeros = 0;
+        let n = 0;
+        let suma = 0;
+        let num;
+        for (let i = 0; i <= 3; i++) {
+        let numero = prompt("Ingresa numeros: ");
+        if (numero < 0){
+        contadorNegativos = contadorNegativos + 1;
+
+        }
+        else if (numero > 0){
+            contadorPositivos = contadorPositivos + 1;
+        }
+        numerosList.push( numero ); alert(contadorPositivos);
+
+        if (numero == 0){
+            contadorCeros = contadorCeros + 1;
+        }
+
+        numero = parseInt(numero)
+        suma = suma + numero;
+        n = n + 1;
+
+     }
+  /* Con Join podemos unir los item de la lista */
+       // document.getElementById("here").innerHTML = nombresList.join(" ");
+       alert("Numeros positivos: "+contadorPositivos);
+       alert("Numeros negativos: "+contadorNegativos);
+       alert("Numeros 0: "+contadorNegativos);
+       
+        
+    
+        
+
+
+        
+
+        
+    </script>
+    
+</body>
+</html>
